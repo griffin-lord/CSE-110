@@ -1,0 +1,18 @@
+public class main{
+  public static void main(String[]args){
+    int hungry
+      //2AB is not valid,cause it starts with a number
+      //312.2 is not valid,cause it starts with a number also has a fullstop!
+      int MOBILE
+      //MOBIILE is valid,cause it's a word written in capital letters.
+      //"Ans" is not valid,cause identifiers cannot be enclosed in double quotes!
+      int 30
+      //30 is valid,cause it contains numbers.
+      //Yes/No is not valid,cause we can not use special character like slashes.
+      int student-id
+      // Valid, cause hyphens are allowed
+      //A+3 is not valid, contains '+' unallowed prenthesis
+      //'X' is not valid,cause single quotes are not allowed
+      //return is not valid,cause it's a reserved key word
+       }
+     }

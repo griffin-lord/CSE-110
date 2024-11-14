@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class convmeter{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num=69;
+        int meter=1000;
+        int convmeter= num*meter
+        System.out.println("Converted to Meters: " +convmeter);
+    }
+}
+        

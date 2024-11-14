@@ -1,0 +1,170 @@
+//Q.10
+public class main{
+  public static void main(String[]args){
+    int hungry
+      //2AB is not valid,cause it starts with a number
+      //312.2 is not valid,cause it starts with a number also has a fullstop!
+      int MOBILE
+      //MOBIILE is valid,cause it's a word written in capital letters.
+      //"Ans" is not valid,cause identifiers cannot be enclosed in double quotes!
+      int 30
+      //30 is valid,cause it contains numbers.
+      //Yes/No is not valid,cause we can not use special character like slashes.
+      int student-id
+      // Valid, cause hyphens are allowed
+      //A+3 is not valid, contains '+' unallowed prenthesis
+      //'X' is not valid,cause single quotes are not allowed
+      //return is not valid,cause it's a reserved key word
+       }
+     }
+
+//Q.11
+ public class Main {
+    public static void main(String[] args) {
+    int numb1 = 4;
+    System.out.println("First number: " +numb1);
+    int numb2 = 5;
+      int summ = numb1+numb2;
+      System.out.println("Addition: " +summ);
+      int division = numb1/numb2;
+         System.out.println("Division: " +division);
+      double dubnumb3 = 10.08438432784748489;
+      double dubnumb4 = 20.90483287426487437;
+      double dubsumm = dubnumb3+dubnumb4;
+         System.out.println("Double Addition: " +dubsumm);
+         double dubcross = dubnumb3*dubnumb4;
+         System.out.println("Double Cross Pruduct: " +dubcross);
+         double dubdivision = dubnumb3/dubnumb4;
+         System.out.println("Double DiVision Pruduct: " +dubdivision);
+         int dubnumb5=69;
+         double dubnumb6= 69.98748742748;
+         double dubadd= dubnumb5+dubnumb6;
+         System.out.println("Double Addition Pruduct: " +dubadd);
+         double dubcross1 = dubnumb5*dubnumb6;
+         System.out.println("Double Cross Pruduct: " +dubcross1);
+         double dubdivision1 = dubnumb5/dubnumb6;
+         System.out.println("Double DiVision Pruduct: " +dubdivision1);
+         String numer1="18";
+         System.out.println(numer1);
+         String numer2="3300";
+         System.out.println(numer1+numer2);
+    }
+ }
+
+//Q.12
+public class circle {
+    public static void main(String[] args) {
+        double radius = 5.0;
+        double circumference = 2*Math.PI*radius;
+        double area = Math.PI*Math.pow(radius,2);
+        System.out.println("Circumference: " +circumference);
+        System.out.println("Area: " +area);
+    }
+}
+
+//Q.13
+import java.util.Scanner;
+public class convmeter{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        double inch = 0.0254;
+        int givenavalue=100;
+        double convmeter= inch * givenavalue;
+        System.out.println("Converted to Meters: " +convmeter);
+    }
+}
+        
+//Q.14
+import java.util.Scanner;
+public class convmeter{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int num=69;
+        int meter=1000;
+        int convmeter= num*meter;
+        System.out.println("Converted to Meters: " +convmeter);
+    }
+}
+
+//Q.15(a)   
+public class inte{
+  public static void main(String[]args){
+    int numb1=69;
+    int numb2=72;
+    int numb3= numb1+numb2;
+    numb1=numb3-numb2;
+     numb2=numb3-numb1;
+    System.out.println("Number1: "+numb1);
+      System.out.println("Number2: "+numb2);
+  }
+}
+//Q.15(b)
+public class inter{
+  public static void main(String[]args){
+    int numb1=69;
+    int numb2=72;
+    numb1=numb1+numb2;
+     numb2=numb1-numb2;
+    System.out.println("Number1: "+numb1);
+      System.out.println("Number2: "+numb2);
+  }
+}
+//Q.16
+public class minutecou{
+  public static void main(String[]args){
+   int testmin=3456789;
+    int hourss= testmin/60;
+      int dayss= hourss/24;
+      int yearss= dayss/365;
+      System.out.println("Total Years: " +yearss);
+  }
+}
+//Q.17
+public class math{
+  public static void main(String[]args){
+   int a=2;
+    int b=5;
+      int c=8;
+      int calcu= (2*b*(c-a)/3)+7;
+      System.out.println("Answer: " +calcu);
+  }
+}
+//Q.18
+public class studid{
+  public static void main(String[]args){
+   int a=24201218;
+   int lasttwo= a%100;
+      System.out.println("Answer: " +lasttwo);
+  }
+}
+//Q.19
+public class hexagon{
+  public static void main(String[]args){
+   double a=8.0;
+   double area= (3*Math.sqrt(3)/3)*a*a;
+   double circum= 6*a;
+      System.out.println("Circumferance: " +circum);
+       System.out.println("area: " +area);
+  }
+}
+
+//Q.20
+public class clacuoftri{
+  public static void main(String[]args){
+   double a=4.5;
+   double b=9.5;
+   double c= (Math.sqrt(a)+Math.sqrt(b));;
+      System.out.println("The value of C: " +c);
+      double sinA=a/c;
+      System.out.println("The value of sin(A): " +sinA);
+      double sinB=b/c;
+      System.out.println("The value of sin(B): " +sinB);
+      double cosA=b/c;
+      System.out.println("The value of cos(A): " +cosA);
+      double cosb=a/c;
+      System.out.println("The value of cos(B): " +cosb);
+  }
+}
+
+
+//               the end

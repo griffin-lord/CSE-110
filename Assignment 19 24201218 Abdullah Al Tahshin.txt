@@ -1,0 +1,9 @@
+public class hexagon{
+  public static void main(String[]args){
+   double a=8.0;
+   double area= (3*Math.sqrt(3)/3)*a*a;
+   double circum= 6*a;
+      System.out.println("Circumferance: " +circum);
+       System.out.println("area: " +area);
+  }
+}
