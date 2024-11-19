@@ -1,0 +1,30 @@
+import java.util.Scanner;
+  public class numbscou{
+   public static void main(String[]args ){
+   Scanner sc = new Scanner(System.in);
+    int amou = sc.nextInt();
+    int gave = sc.nextInt();
+    int count1=0
+    if (amou == gave){
+     System.out.println("The returned amount is 0 taka.");
+      }
+      if (amou > gave ){
+       System.out.println("Please pay"+(amou-gave)+"TK";
+     }
+      if(amou < gave){
+         int retu=(gave-amou);
+        System.out.println("Please pay"+(gave-amou)+"TK");  
+        while (retu>=100){
+          if (retu%100 == ){
+          count1++;
+          System.out.println("100 taka note:"+count1);
+          }
+          else {
+            System.out.println("100 taka note:0");
+          }
+      }
+       else {
+        System.out.println("None of the are equal or different");
+    }
+   }
+ }

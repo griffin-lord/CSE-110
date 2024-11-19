@@ -1,0 +1,18 @@
+import java.util.Scanner;
+  public class numbercou{
+   public static void main(String[]args ){
+   Scanner sc = new Scanner(System.in);
+    double a = sc.nextDouble();
+    double b = sc.nextDouble();
+    double c = sc.nextDouble();
+    if( a==b && a==c && b==c){
+      System.out.println("This is a Equilateral triangle");
+    }
+    else if ( a==b OR b==c){
+      System.out.println("This is a Isosceles triangle");
+    }
+    else {
+      System.out.println("This is a Scalene triangle");
+    }
+   }
+ }
