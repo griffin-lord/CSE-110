@@ -1,0 +1,15 @@
+public class Factorial {
+    public static void main(String[] args) {
+        int number = 7;
+        int factorial = 1;
+        int cou=1;
+        while( cou <= number;) {
+            factorial *= i;
+            cou=cou+1;
+        }
+
+        System.out.println("The factorial of " + number + " is " + factorial);
+
+        scanner.close();
+    }
+}
