@@ -1,0 +1,223 @@
+
+                     Name: Abdullah Al Tahshin
+                        BRACU ID: 24201218
+
+//Q.1
+import java.util.Scanner;
+public class ConvertTopper {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+         String inp = sc.nextLine();
+           String resu = "";
+        for (int i=0;i<inp.length();i++) {
+            char ch=inp.charAt(i);
+             if (ch>='a' && ch<='z'){
+                resu+=(char) (ch-32);
+            }
+        }
+           System.out.println(resu);  
+    }
+}
+//Q.2
+import java.util.Scanner;
+public class palornot {
+    public static void main(String[] args) {
+        Scanner sca = new Scanner(System.in);
+         String input = sca.nextLine();
+          String result = "";
+            int n=input.length();
+        for (int i=0; i<n/2; i++) {
+            if (input.charAt(i)==input.charAt(n-1-i)){
+                result = "True";
+           }
+              else {
+                  result = "False";
+            }
+       }
+                   System.out.println(result);
+   }
+}
+//Q.3
+import java.util.Scanner;
+public class Spliring {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          String inpring = sc.nextLine();
+             char spl = sc.next().charAt(0);
+        String rest = "";
+          for (int i =0; i<inpring.length(); i++) {
+            char ch = inpring.charAt(i);
+             if (ch == spl) {
+                System.out.println(rest);
+                rest = "";
+            } 
+              else {
+                rest += ch;
+            }
+        }
+        System.out.println(rest);
+    }
+}
+//Q.4
+import java.util.Scanner;
+public class Revdtr {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          String word = sc.nextLine();
+           String rev = " ";
+              for (int i = word.length()-1;  i >=0;  i--){
+          rev+= word.charAt(i);
+        }
+        System.out.println(rev);
+    }
+}
+//Q.5
+import java.util.Scanner;
+public class blimeyplunder {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          String wrod = sc.nextLine();
+            int vowcow=0;
+              int concow=0;
+        for (int i=0; i<wrod.length(); i++){
+          char ch = wrod.charAt(i);
+          if (ch == 'a' || ch == 'e' || ch == 'i' || ch ==  'o'|| ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch ==  'O' || ch== 'U' ){
+                                                                vowcow++;
+          }
+          else{
+                                                                concow++;
+          }
+        }
+          if ( vowcow % 3 == 0 && concow%5 == 0 ){
+                                          System.out.println("Aaarr! Me Plunder!!");
+             }
+          else{
+                                           System.out.println("Blimey! No Plunder!!");
+             }
+    }
+}
+//Q.6
+import java.util.Scanner;
+public class Revworlds {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+         String in = scan.nextLine();
+          String rev = " ";
+           String wor$="";
+        for (int i =in.length()-1;i>= 0; i--) {
+                char ch1 =in.charAt(i);
+                if(ch1 == ' ' || i == 0 ) { 
+                  if(i==0){ rev +=ch1;}
+                  for (int x=rev.length()-1; x>=0; x--){
+                    char ch$=rev.charAt(x);
+                      wor$ += ch$;
+                  }
+                       System.out.print(wor$);
+                        System.out.print("");
+                              rev="";
+                              wor$=""; 
+
+                }
+                else {
+                        rev += ch1;
+                }
+        }
+    }
+}
+//Q.7
+import java.util.Scanner;
+public class doubler {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          String wrod= sc.nextLine();
+            String word = sc.nextLine();
+                String res= "";
+         for (int i = 0; i <wrod.length(); i++) { 
+                  char ch=wrod.charAt(i); 
+           if (word.indexOf(ch) == -1) { 
+                  res+=ch; 
+           } 
+         } 
+         for (int i = 0; i <word.length(); i++) { 
+                char ch = word.charAt(i); 
+           if (wrod.indexOf(ch) == -1) { 
+                res +=ch; 
+           } 
+         } 
+         res = res.toUpperCase(); 
+         System.out.println(+res);
+    }
+}
+/*Alhamdulillah*/
+//Q.8
+import java.util.Scanner;
+public class aLtErNaTiNgg{
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+         String wordwar = scan.nextLine();
+          String rest = "";
+             boolean toLowerCase = true;
+        for (int i = 0; i <wordwar.length(); i++) {
+              char ch$ =wordwar.charAt(i);
+            if (ch$ >='a' && ch$ <='z') {
+                if (toLowerCase) {
+                     rest += ch$;
+                } else {
+                    rest += (char)(ch$ - 32);
+                }
+                toLowerCase = !toLowerCase;
+            } 
+            else if (ch$ >='A'&&ch$<='Z') {
+                if (toLowerCase) {
+                    rest += (char) (ch$ + 32);
+                }
+                 else {
+                    rest += ch$;
+                }
+                toLowerCase = !toLowerCase;
+            } 
+            else {
+                rest += ch$;
+            }
+        }
+        System.out.println(rest);
+    }
+}
+//Q.9
+import java.util.Scanner;
+public class passchecke{
+  public static void main(String [] args){
+     Scanner sc = new Scanner (System.in);
+       String pass= sc.nextLine();
+         int upcheck=0;
+          int lpwcheck=0;
+           int digspcheck=0;
+            int spcheck=0;
+    if (pass.length()>=8){
+      for (int i=0; i<pass.length(); i++){
+          char ch = pass.charAt(i);
+        if (ch >= 'A' && ch<= 'Z'){
+               upcheck++;
+        }
+        else if (ch >= 'a' && ch <= 'z'){
+                lpwcheck++;
+        }
+        else if ( ch >= ' ' && ch <= '@' ){
+                  digspcheck++;
+        }
+         else if ( ch>='[' &&  ch<='`'){
+               spcheck++;
+        }
+      }
+    }
+    else {
+      System.out.println("False");
+    }
+    if (upcheck>=1 && lpwcheck>= 1 && digspcheck>=1 && spcheck>=1){
+                 System.out.println("True");
+    }
+    else {
+                System.out.println("False");
+    }
+  }
+}

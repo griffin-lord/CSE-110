@@ -1,0 +1,248 @@
+///Abdullah Al Tahshin///
+///24201218///
+
+//Q.1
+import java.util.Scanner;
+public class stats {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many numbers input? ");
+        int count= sc.nextInt();
+        int max =Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int sum = 0;
+        int evencou = 0;
+        for (int i=0;i<count;i++) {
+            System.out.print("Enter number "+(i + 1)+":");
+            int num=sc.nextInt();
+            if (num>0 && num%2==0) {
+                if (num>max){
+                    max =num;
+                }
+                if (num<min){
+                    min=num;
+                }
+                sum+= num;
+                evencou++;
+            }
+        }
+        double average = (evencou == 0) ? 0 : (double) sum/evencou;
+        if (evencou>0){
+            System.out.println("Maximum even positive number: " +max);
+            System.out.println("Minimum even positive number: " +min);
+        } 
+        else {
+            System.out.println("No even positive numbers were entered.");
+        }
+        System.out.println("Average of even positive numbers: "+average);
+    }
+}
+//Q.2
+import java.util.Scanner;
+public class squaring{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+         int i=1;
+        while (i>0){
+            System.out.print("Enter an int");
+            int numb = sc.nextInt();
+            if (numb<0) {
+                break;
+            }
+            System.out.println("The square of" +numb+" is"+Math.pow(numb,2));
+        }
+    }
+}
+//Q.3
+import java.util.Scanner;
+public class finding{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many numbers to input?");
+          int cou= sc.nextInt();
+          int negcou=0;
+          int poscou=0;
+          for (int i=0; i<cou; i++){
+            System.out.print("Enter number "+(i+1)+" "); 
+            int num = sc.nextInt();
+            if (num>0){
+            poscou++;
+          }
+            else {
+              negcou++;
+            }
+          }
+          System.out.println(negcou);
+          System.out.println(poscou);
+          }
+    }
+//Q.4
+import java.util.Scanner;
+public class summi {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Nu=sc.nextInt();
+        int countee= 0; 
+        int numbs=2; 
+        while (countee<Nu) {
+            int divis=2;
+            while (divis<=numbs/2){
+                if (numbs%divis==0){
+                    break;
+                }
+                divis++;
+            }
+            if (divis > numbs/2 && numbs>1) {
+                System.out.println(numbs);
+                countee++;
+            }
+            numbs++;
+        }
+    }
+}
+
+//Q.5
+import java.util.Scanner;
+public class summi{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+          int num=sc.nextInt();
+        int summ=0;
+        int y=0;
+        for(int i=0;i<=num;i++){
+          summ+= i;
+          y -= summ;
+        }
+        System.out.println("The value of y:"+y);
+    }
+}
+//Q.6
+import java.util.Scanner;
+public class ques6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Nu = sc.nextInt();
+        int countee= 0; 
+         int i=1;
+        while (i>0) {
+            System.out.print("Enter an even positive int ");
+            int numb = sc.nextInt();
+            if(numb%2!=0) {
+            System.out.println("Program stopped because an odd number was entered.");
+                break;
+            }
+            if (numb <= 0) {
+            System.out.println("Please enter a pos int.");
+                continue;
+            }
+            for (int y=1;y<= numb;y++) {
+              if(numb%y==0) {
+                    countee++;
+              }
+            }
+          System.out.println("The number of divisors of "+numb+"is:" +countee);
+        }
+    }
+}
+
+//Q.7
+import java.util.Scanner;
+public class numbsssss {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        for (int i=0;i<num;i++) {
+            int X=4;
+            int y = 5;
+            int summe= 0;
+            int counte = 0;
+            int curre = X;
+            while (counte<y) {
+                if (curre%2!=0) {
+                    summe+= curre;
+                    counte++;
+                }
+                curre++;
+            }
+            System.out.println("The sum oh the first " +y+ "odd numbers starting from" +X+ " is:" +summe);
+        }
+    }
+}
+//Q.8
+import java.util.Scanner;
+public class ques8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the height of the RECTANGLEE: ");
+        int height=sc.nextInt();
+        System.out.println("Enter the width of the RECTANGLEE: ");
+        int width=sc.nextInt();
+        System.out.println("RECTANGLEE: ");
+        for (int x=0;x<height;x++){ 
+          for (int y=1;y<width;y++){ 
+            System.out.print(y+" ");
+          }
+            System.out.println();
+        }
+     }
+ }
+//Q.9
+import java.util.Scanner;
+public class triangle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the height of the triangle: ");
+        int height=sc.nextInt();
+        for (int x=1;x<=height;x++) {
+            for (int y=height;y>x;y--) {
+              System.out.print("  ");
+            }
+              for (int z=1;z<=x;z++) {
+                 System.out.print(z+" ");
+            }
+                     System.out.println();
+        }
+    }
+}
+//Q.10
+import java.util.Scanner;
+public class triangle2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the height of the triangle: ");
+        int height = sc.nextInt();
+        for (int x=1;x<=height;x++) {
+            for (int y=height;y>x;y--) {
+              System.out.print("  ");
+            }
+              for (int z=1;z<=(2*x-1);z++) {
+                 System.out.print(z+" ");
+            }
+                     System.out.println();
+        }
+    }
+}
+//Q.11
+public class quw11{
+    public static void main(String[]args){
+      for (int start=10;start<=10000;start++){
+        int cop=start;
+        int summ=0;
+        int stop=start;
+        int count=0;
+        while (stop != 0){
+          stop = stop/10;
+          count++;
+        }
+        while (start>0){
+          int digit=start%10;
+          summ = summ +(int)Math.pow(digit,count);
+          start=start/10;
+        }
+        if (summ == cop){
+          System.out.println(cop+ "is an Armstrong Number");
+        }
+        start= cop;
+      }
+    }
+}

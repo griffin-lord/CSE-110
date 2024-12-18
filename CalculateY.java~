@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class CalculateY {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of N (N > 0): ");
+        int N = scanner.nextInt();
+
+        // Ensure N is greater than 0
+        if (N <= 0) {
+            System.out.println("N must be greater than 0.");
+            return;
+        }
+
+        int y = 0;
+        int sum = 0;
+
+        // Calculate the value of y using one loop
+        for (int i = 1; i <= N; i++) {
+            sum += i;
+            y -= sum;
+        }
+
+        System.out.println("The value of y is: " + y);
+
+        scanner.close();
+    }
+}
