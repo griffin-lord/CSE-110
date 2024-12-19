@@ -1,0 +1,6 @@
+We can make a convex mirror by curving a plane mirror so its surface is
+convex (“flexed out”) as in Fig. 34-8c. Curving the surface in this way (1) moves
+the center of curvature C to behind the mirror and (2) increases the field of view.
+It also (3) moves the image of the object closer to the mirror and (4) shrinks it.
+Store surveillance mirrors are usually convex to take advantage of the increase in
+the field of view—more of the store can then be seen with a single mirror.
