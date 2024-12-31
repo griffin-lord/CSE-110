@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class SumOddNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of test cases: ");
+        int num = scanner.nextInt();
+        for (int i = 0; i<num; i++) {
+            System.out.print("Enter the starting number (x): ");
+            int x = sc.nextInt();
+            System.out.print("Enter the number of odd numbers to sum (y): ");
+            int y = sc.nextInt();
+            int summ= 0;
+            int coun = 0;
+            int curr = x;
+            while (coun < y) {
+                if (curr % 2 != 0) {
+                    summ += curr;
+                    count++;
+                }
+                curr++;
+            }
+            System.out.println("The sum of the first " + y + " odd numbers starting from " + x + " is: " + sum,);
+        }
+    }
+}
